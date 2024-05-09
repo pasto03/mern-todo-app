@@ -1,0 +1,30 @@
+.wrapper {
+    padding: 30px;
+}
+
+.blogList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.blog {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid red;
+    height: 180px;
+}
+
+.blog-content {
+    height: 120px;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    overflow: hidden;
+}
+
+.blog-content h3 {
+    margin-block: 10px;
+}
