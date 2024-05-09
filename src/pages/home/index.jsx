@@ -26,7 +26,7 @@ export default function Home() {
         // console.log(getCurrentId);
         if (!getCurrentId) return;
         const response = await fetch(
-            `${process.env.SERVER_URL}/api/blogs/${getCurrentId}`,
+            `${process.env.REACT_APP_SERVER_URL}/api/blogs/${getCurrentId}`,
             { method: "DELETE", }
         );
 
